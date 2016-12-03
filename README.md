@@ -1,5 +1,7 @@
 # api docs
 
+**baseurl  http://wechatme.leanapp.cn**
+
 1.用户管理
 
 (1)注册
