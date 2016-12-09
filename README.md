@@ -26,7 +26,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->GET /api/v1/smsCode/:mobilePhoneNumber
+>GET /api/v1/smsCode/{mobilePhoneNumber}
 
 ###请求参数
 
