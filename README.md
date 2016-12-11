@@ -74,3 +74,30 @@ image-text(验证码内容，在response headers中)
   "token": "xxxxx"
 }
 ```
+
+(4)获取单个用户信息（使用token）
+
+请求说明
+
+>GET /api/v1/users/{user}
+
+###请求参数
+
+| 参数名    |  请求范围| 说明 |
+| :-------- | --------:| :--: |
+| user  | 必填 |  用户名/用户id等，只做路由用， 并不是关键信息   |
+
+
+#### 返回结果
+
+```javascript
+{
+  "username": "zzr",
+  "emailVerified": false,
+  "mobilePhoneNumber": "15751158939",
+  "mobilePhoneVerified": true,
+  "objectId": "584cf72f61ff4b006ccaff98",
+  "createdAt": "2016-12-11T06:50:23.133Z",
+  "updatedAt": "2016-12-11T15:11:14.673Z"
+}
+```
