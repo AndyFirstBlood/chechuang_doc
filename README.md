@@ -1,11 +1,11 @@
 # api docs
 
-**baseurl  http://chechuang.leanapp.cn**
+**baseurl  http://xxxxx.xxx**
 
 1.用户管理
 
 (1)验证图片
->GET /api/v1/auth/image
+>GET /api/v1/captcha/image
 ###请求参数
 
 | 参数名    |  请求范围| 说明 |
@@ -26,7 +26,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->GET /api/v1/smsCode/:mobilePhoneNumber
+>GET /api/v1/sms/{mobilePhoneNumber}
 
 ###请求参数
 
@@ -38,9 +38,7 @@ image-text(验证码内容，在response headers中)
 
 ```javascript
 {
-  "status": 1,
-  "code": 200,
-  "data": "get smsCode success"
+  OK
 }
 ```
 
@@ -48,7 +46,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->POST /api/v1//signuporlogin/phone
+>POST /api/v1/auth
 
 ###请求参数
 
@@ -62,16 +60,15 @@ image-text(验证码内容，在response headers中)
 
 ```javascript
 {
-  "status": 1,
-  "code": 200,
-  "data": {
-    "username": "zzr",
-    "mobilePhoneNumber": "15751158939",
+  "user": {
+    "username": "xxx",
+    "mobilePhoneNumber": "xxxx",
     "mobilePhoneVerified": true,
     "emailVerified": false,
-    "objectId": "58497954ac502e006c5b3519",
+    "objectId": "xxxxx",
     "createdAt": "2016-12-08T15:16:36.646Z",
     "updatedAt": "2016-12-08T15:16:36.646Z"
-  }
+  },
+  "token": "xxxxx"
 }
 ```
