@@ -86,17 +86,18 @@ image-text(验证码内容，在response headers中)
 | 参数名    |  请求范围| 说明 |
 | :-------- | --------:| :--: |
 | user  | 必填 |  用户名/用户id等，只做路由用， 并不是关键信息   |
+| headers.Authorization  | 必填 |  token   |
 
 
 #### 返回结果
 
 ```javascript
 {
-  "username": "zzr",
+  "username": "xxx",
   "emailVerified": false,
-  "mobilePhoneNumber": "15751158939",
+  "mobilePhoneNumber": "xxx",
   "mobilePhoneVerified": true,
-  "objectId": "584cf72f61ff4b006ccaff98",
+  "objectId": "xxxx",
   "createdAt": "2016-12-11T06:50:23.133Z",
   "updatedAt": "2016-12-11T15:11:14.673Z"
 }
