@@ -6,7 +6,7 @@
 
 (1)验证图片
 
->GET /api/v1/captcha/image
+>GET /v1/captcha/image
 
 ###请求参数
 
@@ -28,7 +28,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->GET /api/v1/sms/{mobilePhoneNumber}
+>GET /v1/sms/{mobilePhoneNumber}
 
 ###请求参数
 
@@ -48,7 +48,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->POST /api/v1/auth
+>POST /v1/auth
 
 ###请求参数
 
@@ -79,7 +79,7 @@ image-text(验证码内容，在response headers中)
 
 请求说明
 
->GET /api/v1/users/{user}
+>GET /v1/users/{user}
 
 ###请求参数
 
